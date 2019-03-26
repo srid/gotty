@@ -8,11 +8,7 @@ buildGoPackage rec {
 
   goPackagePath = "github.com/yudai/gotty";
 
-  src = fetchgit {
-    inherit rev;
-    url = "https://github.com/srid/gotty.git";
-    sha256 = "1vhhs7d4k1vpkf2k69ai2r3bp3zwnwa8l9q7vza0rck69g4nmz7a";
-  };
+  src = ./.;
 
   goDeps = ./deps.nix;
 
