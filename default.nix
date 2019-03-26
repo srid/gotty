@@ -4,7 +4,6 @@
 buildGoPackage rec {
   name = "gotty-srid-${version}";
   version = "2017-12-13";
-  rev = "a080c85cbc59226c94c6941ad8c395232d72d517";
 
   goPackagePath = "github.com/yudai/gotty";
 
